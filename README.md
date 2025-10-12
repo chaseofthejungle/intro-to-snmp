@@ -29,3 +29,7 @@
 <hr />
 
 ## 5. <a name="supplemental">Supplemental Resources</a>
+
+* *[Cisco Official SNMP Configuration Guide](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/snmp/configuration/xe-16/snmp-xe-16-book.html)*
+* *[Aruba Official Configuring SNMP Guide](https://arubanetworking.hpe.com/techdocs/AOS-CX/10.07/HTML/5200-7887/Content/Chp_SNMP/cnf-snm.htm)*
+* *[Configure SNMP in Junos OS (Official Juniper Guide)](https://www.juniper.net/documentation/us/en/software/junos/network-mgmt/topics/topic-map/configure-snmp-in-junos-os.html)*
