@@ -31,6 +31,24 @@
 
 ## 4. <a name="limits">Limitations of SNMP</a>
 
+**Some potential configuration-related drawbacks of SNMP include:**
+
+* *High learning curve* for user account management/access control and encryption (e.g., AES, DES) and authentication (e.g., SHA, MD5) protocols.
+* Increased possibility of *misconfigurations* due to human error, which can lead to security breaches due to improper or substandard enforcements (such as if complex password and/or password history policies are not being applied) and suboptimal resource utilization due to faulty monitoring processes.
+  + There is also the issue of every SNMP device needed to have an unique engine ID configured for it. This introduces more potential for error because redundant interfaces may share these IDs. However, without them, devices may have important requests timeout or otherwise be declined. 
+
+**Some potential performance-related drawbacks of SNMP include:**
+
+* *Heavy processor burden* on network management station and endpoint devices, due to resource requirements of SNMP's encryption and authentication mechanisms.
+* Load balancing needs due to *heavy network traffic*, as SNMP packets contain potentially large security headers that may not scale well on larger enterprise networks.
+* *Request throughput bottlenecks*, as a consequence of high scaling on large networks (heavy monitoring and security related requests).
+
+**Some additional security and support drawbacks of SNMP include:**
+
+* *Susceptibility to spoofing and discovery message attacks* due to SNMP managers and agents not natively supporting robust authentication mechanisms (and, in the case of discovery messages, encryption mechanisms).
+* *Lack of native compatibility with older SNMP versions*, because of modifications to message formatting and security mechanisms.
+* Possibility of needing to purchase *paid support*, on a vendor-by-vendor and need-by-need (such as encryption and authentication) basis.
+  
 <hr />
 
 ## 5. <a name="supplemental">Supplemental Resources</a>
