@@ -5,10 +5,11 @@
 #### Table of Contents
 
 1. [Explaining SNMP](#explaining)
-2. [SNMP Runtime Components](#components)
-3. [Important SNMP Commands and Messages](#commands)
-4. [Limitations of SNMP](#limits)
-5. [Supplemental Resources](#supplemental)
+2. [SNMP Version History](#history)
+3. [SNMP Runtime Components](#components)
+4. [Important SNMP Commands and Messages](#commands)
+5. [Limitations of SNMP](#limits)
+6. [Supplemental Resources](#supplemental)
 
 <hr />
 
@@ -20,7 +21,13 @@ SNMP operates by sending out messages known as Protocol Data Units (PDUs) to int
 
 <hr />
 
-## 2. <a name="components">SNMP Runtime Components</a>
+## 2. <a name="history">SNMP Version History</a>
+
+(TODO)
+
+<hr />
+
+## 3. <a name="components">SNMP Runtime Components</a>
 
 * **SNMP-Managed Devices:** SNMP agents execute on a diversity of network devices (e.g., routers, switches, client workstations, printers), so that they may be monitored and managed. Through SNMP nodes, managed devices can interface with other components of a network.
 * **SNMP Agents:** SNMP agents are software programs that execute on local devices and services that are being actively monitored, gathering data such as disk, CPU, and bandwidth usage. The SNMP manager/server quieries agents, which locate relevant data from storage and transmit data back to the requesting manager/server.  
@@ -29,7 +36,7 @@ SNMP operates by sending out messages known as Protocol Data Units (PDUs) to int
 
 <hr />
 
-## 3. <a name="commands">Important SNMP Commands and Messages</a>
+## 4. <a name="commands">Important SNMP Commands and Messages</a>
 
 **Examples of five common messages/commands that enable interactions between SNMP managers and SNMP agents include:**
 
@@ -41,7 +48,7 @@ SNMP operates by sending out messages known as Protocol Data Units (PDUs) to int
 
 <hr />
 
-## 4. <a name="limits">Limitations of SNMP</a>
+## 5. <a name="limits">Limitations of SNMP</a>
 
 **Some potential configuration-related drawbacks of SNMP include:**
 
@@ -63,7 +70,7 @@ SNMP operates by sending out messages known as Protocol Data Units (PDUs) to int
   
 <hr />
 
-## 5. <a name="supplemental">Supplemental Resources</a>
+## 6. <a name="supplemental">Supplemental Resources</a>
 
 * *[Cisco Official SNMP Configuration Guide](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/snmp/configuration/xe-16/snmp-xe-16-book.html)*
 * *[Aruba Official Configuring SNMP Guide](https://arubanetworking.hpe.com/techdocs/AOS-CX/10.07/HTML/5200-7887/Content/Chp_SNMP/cnf-snm.htm)*
