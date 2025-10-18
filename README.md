@@ -1,12 +1,12 @@
 # Intro to SNMP Overview Guide
 
-**TODO:** A brief introductory guide to Simple Network Management Protocol (SNMP).
+**Description/Overview:** Simple Network Management Protocol (SNMP) is the most widely-recognized network monitoring and mapping protocol, operating at the application layer. It is an industry-standard network communications solution for gathering and analyzing network traffic, generating: a) reports that administrators can consult to handle issues (such as network device outages/errors and performance bottlenecks), and b) real-time (noting changes as they occur) visual inventories of network connections and their connectivity statuses. SNMP was developed in the 1980s, with the current standard being SNMPv3.
 
 #### Table of Contents
 
 1. [Explaining SNMP](#explaining)
 2. [SNMP Runtime Components](#components)
-3. [Important SNMP Commands and Configurations](#commands)
+3. [Important SNMP Commands and Messages](#commands)
 4. [Limitations of SNMP](#limits)
 5. [Supplemental Resources](#supplemental)
 
@@ -14,9 +14,9 @@
 
 ## 1. <a name="explaining">Explaining SNMP</a>
 
-Simple Network Management Protocol (SNMP) is a mechanism that serves as an 'essential service' for assuring networks are up, healthy, and performing as desired: in short, as ingress and egress traffic pass through networks, it needs to be monitored and responded to as necessary to assure availability, security, and high performance. SNMP is a request and response system that allows for such monitoring and requesting/responding to occur. Such characteristics as bandwidth, throughput, web server data request amounts and capacities (e.g., maximum transmission units of packets), and routing errors are tracked and handled as compromises and bottlenecks occur, as well as proactively.
+Simple Network Management Protocol (SNMP) is a mechanism that serves as an 'essential service' for assuring networks are up, healthy, and performing as desired: in short, as ingress and egress traffic pass through networks, it needs to be monitored and responded to as necessary to assure availability, security, and high performance. SNMP is a request and response system that allows for such monitoring and requesting/responding to occur. Such characteristics as bandwidth, throughput, web server data request amounts and capacities (e.g., maximum transmission units of packets), and routing errors are tracked and handled as compromises and bottlenecks occur, as well as proactively. All network devices can be real-time queried/polled for performance, and should the thresholds of values (as configured administratively or by default) be surpassed, SNMP software agents will send alerts (for more information, see [Important SNMP Commands and Configurations](#commands) section).
 
-SNMP operates by sending out messages known as Protocol Data Units (PDUs) to interfaces/devices within the network that are configured to respond to SNMP manager requests (for more information, see [Important SNMP Commands and Configurations](#commands) section). The received data can be displayed (such as for purposes of network/system administrator consultation) or stored/logged (such as for the sake of scripting/documenting and backing up).
+SNMP operates by sending out messages known as Protocol Data Units (PDUs) to interfaces/devices within the network that are configured to respond to SNMP manager requests. The received data can be displayed (such as for purposes of network/system administrator consultation) or stored/logged (such as for the sake of scripting/documenting and backing up).
 
 <hr />
 
@@ -29,7 +29,7 @@ SNMP operates by sending out messages known as Protocol Data Units (PDUs) to int
 
 <hr />
 
-## 3. <a name="commands">Important SNMP Commands and Configurations</a>
+## 3. <a name="commands">Important SNMP Commands and Messages</a>
 
 **Examples of five common messages/commands that enable interactions between SNMP managers and SNMP agents include:**
 
