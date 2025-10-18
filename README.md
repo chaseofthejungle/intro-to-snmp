@@ -27,6 +27,14 @@
 
 ## 3. <a name="commands">Important SNMP Commands and Configurations</a>
 
+**Examples of five common messages/commands that enable interactions between SNMP managers and SNMP agents include:**
+
+* *Trap (snmptrap Command):* Allows devices to send out alerts, in the form of asynchronous messages sent by managers to agents (such as when there is a need for a report, or just performing general monitoring/maintenance, such as verifying if idling devices are online). Traps may be sent in response to such events as increased traffic (scalability concerns), system boot up, and being unable to access previously used drives.
+* *Get (snmpget Command):* Returns a single or multiple values from the Management Information Base (MIB).
+* *Get Next (snmpgetnext Command):* Returns the next Object Identifier (OID) value in a MIB hierarchy/tree.
+* *Set (snmpset command):* SNMP managers utilize these to direct SNMP agents to perform actions.
+* *Get Response (GetResponse Messages):* Enables agents to return values quieried for by SNMP managers (through snmpget, snmpgetnext, and snmpset).
+
 <hr />
 
 ## 4. <a name="limits">Limitations of SNMP</a>
